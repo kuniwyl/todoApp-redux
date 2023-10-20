@@ -1,0 +1,19 @@
+@import 'Counter.scss';
+@import 'Todo.scss';
+@import 'Input.scss';
+@import 'TodoElement.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

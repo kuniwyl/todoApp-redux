@@ -1,0 +1,18 @@
+.todoElement {
+    margin-top: 20px;
+    font-size: 20px;
+
+    span {
+        margin-right: 10px;
+    }
+
+    .delete {
+        color: red;
+        transition: .3s;
+    }
+
+    .delete:hover {
+        cursor: pointer;
+        font-size: 24px;
+    }
+}

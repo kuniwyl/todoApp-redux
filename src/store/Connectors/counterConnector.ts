@@ -1,4 +1,4 @@
-import {decrement, increment, incrementByAmount} from "../Reducers/counterReducer.ts";
+import {decrement, increment, incrementByAmount, decrementByAmount} from "../Reducers/counterReducer.ts";
 import {RootState} from "../index.ts";
 import {connect, ConnectedProps} from "react-redux";
 
@@ -9,7 +9,8 @@ const mapState = (state: RootState) => ({
 const mapDispatch = {
   increment,
   decrement,
-  incrementByAmount
+  incrementByAmount,
+  decrementByAmount
 }
 
 const connector = connect(mapState, mapDispatch);

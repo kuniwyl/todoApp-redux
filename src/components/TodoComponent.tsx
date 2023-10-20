@@ -24,9 +24,14 @@ const TodoComponent = (props: TodoComponentProps) => {
   }
 
   return (
-    <>
+    <div className="todo">
       <div>
-        <Input label={"Wprowadź todo"} text={text} setText={setText} error={error} />
+        <Input 
+          label={"Wprowadź todo"} 
+          text={text} 
+          setText={setText}
+          error={error}
+          setError={setError} />
       </div>
       <div>
         <button onClick={() => handleAddElement()}>Dodaj</button>
@@ -36,7 +41,7 @@ const TodoComponent = (props: TodoComponentProps) => {
           <TodoElement key={element.id} id={element.id} name={element.name} />
         )}
       </div>
-    </>
+    </div>
   )
 }
 

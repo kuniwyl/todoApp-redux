@@ -6,11 +6,16 @@ interface CounterProps extends PropsFromRedux {
 
 const Counter = (props: CounterProps) => {
   return (
-    <div>
-      {props.value}
-      <button onClick={() => props.increment()}>+</button>
-      <button onClick={() => props.decrement()}>-</button>
-      <button onClick={() => props.incrementByAmount(10)}>-</button>
+    <div className="counter">
+      <div>
+        {props.value}
+      </div>
+      <div>
+        <button onClick={() => props.increment()}>+</button>
+        <button onClick={() => props.decrement()}>-</button>
+        <button onClick={() => props.incrementByAmount(10)}>+10</button>
+        <button onClick={() => props.decrementByAmount(10)}>-10</button>
+      </div>
     </div>
   )
 }

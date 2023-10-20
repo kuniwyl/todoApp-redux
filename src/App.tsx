@@ -3,10 +3,10 @@ import TodoComponent from "./components/TodoComponent.tsx";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Counter />
       <TodoComponent />
-    </>
+    </div>
   )
 }
 

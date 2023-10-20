@@ -10,11 +10,14 @@ const TodoElement = (props: ITodoElementProps) => {
   const dispatcher = useAppDispatch();
 
   return (
-    <div>
-      <span>
+    <div className="todoElement">
+      <span className="name">
         {props.id}: {props.name}
       </span>
-      <span style={{margin: "20px"}} onClick={() => dispatcher(deleteElement(props.id))}>
+      <span 
+        className="delete"
+        onClick={() => dispatcher(deleteElement(props.id))}
+      >
         Zakończ
       </span>
     </div>
